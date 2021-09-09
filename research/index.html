@@ -1,0 +1,63 @@
+---
+layout: layout
+title: Research 
+---
+
+<section id="research">
+	<div class="container">
+		<div class="text-left">
+			<h1><strong>Research</strong></h1>
+			<div class="panel panel-default">
+				<p align="left">
+				<h5><strong>A Primer on the Irregular Programs</strong></h5>
+				</p>
+				<p align="justify">
+				Regular programs operate over linear data structures such as dense matrices and arrays. 
+				Unlike them, the programs which operate over <b>pointer-based data structures such as trees and graphs</b> are known as irregular programs. 
+				Research in the past has led to the creation of catalogs of performance-enhancing transformations for regular programs.
+				In contrast, there have been relatively few works targeting irregular programs for enhancing performance.
+				Even though work has been done to enhance specific irregular applications, general approaches to improving the performance of broad classes of irregular applications are rare.
+				Pointer-based data structures are difficult optimize because they are,
+				<ul>
+					<li>Input-dependent,</li>
+					<li>Highly dynamic and,</li>
+					<li>Defined recursively.</li>
+				</ul>
+				It is unsurprising that generalization of optimizations on irregular programs is a hard problem.
+				</p>
+			</div>
+			<div class="panel panel-default">
+				<p align="left">
+				<h5><strong>TreePoly: A Polyhedral Framework for Tree Traversals</strong></h5>
+				</p>
+				<p align="justify">
+				Loops are the iterative construct of choice when it comes to regular programs. 
+				Not only there has been work done to enhance the performance of loop-based programs, but also fairly deep research has been done to construct frameworks to analyze the composition of such transformations. 
+				The polyhedral framework is one such well-known framework for composing of transformations for loops.
+				</p>
+				<p align="justify">
+				These frameworks work well on loops and iterative iteration spaces with affine bounds. 
+				In contrast, there is no such framework for analyzing and composing transformations meant for irregular programs. 
+				When it comes to irregular programs the convenient choice of iteration construct is recursion. 
+				Even though it is possible to write irregular programs using loops, those programs result in irregular loop bounds and make unfavorable for pass-through frameworks in order to end up with performance enhancement. 
+				Hence designing a framework dedicated to analyze and compose transformations on irregular programs is an interesting research problem.
+				</p>
+			</div>
+			<div class="panel panel-default">
+				<p align="left">
+				<h5><strong>TreeDataflow: A Dataflow Framework for Tree Traversals</strong></h5>
+				</p>
+				<p align="justify">
+				Control flow is the natural way of writing programs since the advent of programmable machines. 
+				The biggest disadvantage of control flow would be the control dependencies imposed, even though they do not contribute to the correctness of the computation. 
+				In contrast, unlike control flow, dataflow only imposes the data dependencies. 
+				Hence these programs are amenable to parallelization at different granularities and exploitation of schedules inapparent in control flow. 
+				</p>
+				<p align="justify">
+				Considering different factors such as ease of programmability and learning curve of a new paradigm, dataflow appears to be comparatively difficult than control flow. 
+				The task of automatically converting a control flow program to a dataflow one becomes pragmatically useful for a certain class of programs - for instance, tree traversals. 				    On a performance standpoint, exploring and exploiting different schedules of tree traversals seems to be an interesting research problem when they were expressed in a dataflow fashion considering their nature of the irregularity.   
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

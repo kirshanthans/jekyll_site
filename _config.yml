@@ -1,0 +1,16 @@
+markdown: kramdown
+url: https://kirshanthans.github.io
+title: Kirshanthan Sundararajah
+author: Kirshanthan Sundararajah 
+description: Personal Website
+avatar: profile.jpg
+email: ksundar@purdue.edu
+github: kirshanthans 
+twitter: Kirshanthan
+linkedin: kirshanthan 
+scholar: "citations?hl=en&user=knUrjrMAAAAJ"
+disqus: kirshanthans
+permalink: /blog/:year/:month/:day/:title
+
+# needed for travis-ci build
+exclude: [vendor]
